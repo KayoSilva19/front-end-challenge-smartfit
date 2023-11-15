@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'gotham-bold';
+  src: local('gotham'), url(./fonts/gotham-bold.woff2)
+  format('truetype');
+
+  font-family: 'gotham-black';
+  src: local('gotham'), url(./fonts/gotham-black.woff2) format('truetype');
+
+  font-family: 'gotham-book';
+  src: local('gotham'), url(./fonts/gotham-book.woff2) format('truetype');
+
+  font-family: 'gotham-light';
+  src: local('gotham'), url(./fonts/gotham-light.woff2) format('truetype');
+}
+
+@layer base {
+  html {
+    font-family: "gotham-bold", system-ui, sans-serif;
+  }
+}
