@@ -14,6 +14,7 @@ export default {
           900: `#333333`,
         },
         'light-gray': {
+          300: `#F5F5F5`,
           500: `#808080`,
         },
         yelow: {

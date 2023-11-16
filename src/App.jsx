@@ -5,13 +5,13 @@ import { Wrapper } from './styles/Wrapper'
 
 function App() {
   return (
-    <>
+    <div className="relative">
       <Header />
       <Wrapper>
         <FormSearchGyms />
       </Wrapper>
       <Footer />
-    </>
+    </div>
   )
 }
 
