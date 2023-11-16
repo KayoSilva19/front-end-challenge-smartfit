@@ -8,11 +8,11 @@ import forbiddenLockerroom from '../../../assets/forbidden-lockerroom.png'
 import partialFountain from '../../../assets/partial-fountain.png'
 import forbiddenFountain from '../../../assets/forbidden-fountain.png'
 
-export const GymRestrictionNotices = () => {
+export const Restrictions = () => {
   const containerGeneral =
     'flex flex-col justify-center items-center mt-4 bg-light-gray-300 rounded p-4 pt-12 gap-12'
   const containerWarning = 'text-center flex flex-col gap-4'
-  const titleWarning = 'font-bold dark-gray-900'
+  const titleWarning = 'font-bold text-dark-gray-900'
   const flexWarning = 'flex text-center justify-center items-center gap-4 '
   const divWarning = 'text-center flex flex-col items-center'
   const imgWarning = 'h-16 w-16'

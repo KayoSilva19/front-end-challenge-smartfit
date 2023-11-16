@@ -1,5 +1,6 @@
 import iconHour from '../../assets/icon-hour.png'
-import { GymRestrictionNotices } from './GymRestrictionNotices'
+import { ListGyms } from '../ListGyms'
+import { Restrictions } from './Restrictions'
 
 export const FormSearchGyms = () => {
   const styleInputDiv = 'border-t-[1px] py-4 flex justify-between'
@@ -66,7 +67,8 @@ export const FormSearchGyms = () => {
         </footer>
       </form>
 
-      <GymRestrictionNotices />
+      <Restrictions />
+      <ListGyms />
     </section>
   )
 }
