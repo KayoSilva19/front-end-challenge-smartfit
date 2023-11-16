@@ -10,7 +10,7 @@ import forbiddenFountain from '../../../assets/forbidden-fountain.png'
 
 export const CardGym = () => {
   const containerGeneral =
-    'flex flex-col   mt-4 bg-light-gray-300 rounded-[8px] p-4 drop-shadow-md '
+    'flex flex-col mt-8 bg-light-gray-300 rounded-[8px] p-4 drop-shadow-md grow last:grow-0 min-[1280px]:grow-0 '
 
   const isOpenedText = 'font-bold text-green-500 text-sm'
   const isClosedText = 'font-bold text-red-500 text-sm'
@@ -25,7 +25,7 @@ export const CardGym = () => {
         <p>São Paulo, SP</p>
       </header>
       <div>
-        <div className="flex flex-wrap ">
+        <div className="flex flex-wrap gap-4">
           <img className={imgWarning} src={requiredMak} alt="" />
           <img className={imgWarning} src={requiredToel} alt="" />
           <img className={imgWarning} src={partialFountain} alt="" />

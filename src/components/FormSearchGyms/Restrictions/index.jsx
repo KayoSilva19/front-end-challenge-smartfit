@@ -10,12 +10,14 @@ import forbiddenFountain from '../../../assets/forbidden-fountain.png'
 
 export const Restrictions = () => {
   const containerGeneral =
-    'flex flex-col justify-center items-center mt-4 bg-light-gray-300 rounded p-4 pt-12 gap-12'
-  const containerWarning = 'text-center flex flex-col gap-4'
+    'flex flex-col justify-center items-center mt-4 bg-light-gray-300 rounded p-4 py-12 gap-16 sm:flex-row sm:flex-wrap md:gap-4 md:py-4 min-[1280px]:gap-16'
+  const containerWarning = 'text-center flex flex-col gap-4 '
   const titleWarning = 'font-bold text-dark-gray-900'
-  const flexWarning = 'flex text-center justify-center items-center gap-4 '
-  const divWarning = 'text-center flex flex-col items-center'
-  const imgWarning = 'h-16 w-16'
+  const flexWarning =
+    'flex flex-wrap text-center justify-center items-center gap-2 '
+  const divWarning =
+    'text-center flex flex-col items-center md:text-[14px] font-semibold'
+  const imgWarning = 'h-16 w-16 md:h-12 md:w-12'
   return (
     <div className={containerGeneral}>
       <div className={containerWarning}>
