@@ -13,7 +13,8 @@ export const ListGyms = () => {
       .then(function (response) {
         // manipula o sucesso da requisição
         const data = response.data.locations
-        setListGym(data)
+
+        setListGym([...data])
       })
       .catch(function (error) {
         // manipula erros da requisição
@@ -25,9 +26,16 @@ export const ListGyms = () => {
   }, [])
 
   return (
-    <aside className="flex flex-col  sm:flex-row gap-6 sm:justify-between sm:flex-wrap">
+    <aside className="flex flex-col  sm:flex-row gap-6 sm:flex-wrap  sm:justify-center">
       {listGym.map((gym) => {
-        return <CardGym key={gym.id} title={gym.title} content={gym.content} />
+        return (
+          <CardGym
+            key={gym.id}
+            title={gym.title}
+            content={gym.content}
+            schedules={gym.schedules}
+          />
+        )
       })}
     </aside>
   )
